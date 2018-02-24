@@ -1,0 +1,19 @@
+
+
+CLI # command line interface
+
+Pwd # print path
+
+mkdir # create new folder
+
+open # open file 
+
+touch # create new file
+
+rm # remove
+
+rmdir # it can only remove empty directories
+
+rm -r # remove non-empty ditectory
+
+rm -ri # the command ask before remove yes or no
