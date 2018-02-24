@@ -105,14 +105,13 @@ from twilio.rest import Client
 
 from twilio.rest import Client
 
-account_sid = "ACd5740b638052b1d5720b0cdfd5cc38c4"
-auth_token = "c67f752c2ebc73ded3ac99202a876823"
+account_sid = "sdjflsjf"
+auth_token = "sfkjalfjflj"
 client = Client(account_sid,auth_token)
 
 message = client.messages.create(
     body="From Muhtada Hello MyFreinds ! Ya Ya I do it",
-    to= "+9647711250505",
-    # to= "+9647702020808",
+    to= "+964771mmmmm",
     from_="+14243534368"
 )
 
