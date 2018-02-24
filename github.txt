@@ -1,0 +1,25 @@
+git remote add origin http path
+
+git remote -v # to check the version
+
+git push origin master
+
+git fetch origin master # its transfar the chenges from the remote repo to the local repo 
+
+# fork # make a copy to repo 
+
+git shortlog -s -n # to show the changes and who make it and number of changes and sort it
+
+git log --author = 'Surma' # log to Surma changes
+
+git log --gerp = 'bug' # search inside the repo
+
+# pull request # to request change adding which we made it on the original repo
+
+git remote add upstream http path # to make update on the local repo
+
+git fetch upstream master
+
+git rebase # to mixed the commits # make backup branch before to do this git
+
+ 

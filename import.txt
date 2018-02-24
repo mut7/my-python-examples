@@ -1,0 +1,400 @@
+
+
+make new file # 'break_time.py'
+write this code inside it 
+
+import webbrowser
+
+لفتح اي رابط ﻻي فديو
+webbrowser.open("http://www.youemasma,com")
+
+ولغرض جعل الفديو ينتظر مثﻻ دقيقتين قبل ان يعمل نقوم باﻻتي
+
+import break_time
+import webbrowser
+
+time.sleep(10) # الوقت بالثواني
+اذا اردنا الوقت بالساعة يكون وفق اﻻتي 
+(2*60*60)
+webbrowser.open("youtube path)
+/////////////////////
+import time
+time.ctime() # current computer time
+/////////////////////
+import time
+import webbrowser
+
+total-breaks = 3
+break-count = 0
+
+print ('this program started on'+time.ctime())
+while (break-count<total-breaks):
+    time.sleep(10)
+    webbrowser.open("http path")
+    break-count+=1
+/////////////////////
+
+import OS  # OS.Listdir(file path)للوصول الى ملف موجود في الحاسبة
+def rename-file():
+    os.Listdir('Home/mut/arabecoder/prank')
+rename-file()
+/////////////////////
+os.rename(src,dst) # source , distenation 
+
+////////////////////////
+
+file-name.translate(table,list of charactors to remove)
+اسم الفايل          none   '0123456789'
+#  سنستخدم هده الدالة لحذف اﻻرقام من اسم الصور 
+
+48star.jpg >>> star.jpg
+
+////////////////////////
+
+os.getcwd()  # current working directory
+////////////////////
+
+os.chdir() # change directory
+///////////////////////
+
+import os
+def rename_files():
+
+    file_list = os.listdir("/home/mut7/arabcoder/prank/prank")
+    # print (file_list)
+    saved_path = os.getcwd()
+    print("Cuttent Working Directory is"+saved_path)
+    os.chdir("/home/mut7/arabcoder/prank/prank")
+
+    for file_name in file_list:
+        print ("Old name is"+file_name)
+        print ("New name is"+file_name.translate(None,"0123456789"))
+        os.rename(file_name,file_name.translate(None,"0123456789"))
+    os.chdir("/home/mut7/arabcoder/prank/prank")
+rename_files()
+
+/////////////////////////////
+
+import turtle
+def draw_square(some_turtle):
+    for i in range(1,5):
+        some_turtle.forward(100)
+        some_turtle.right(90)
+def draw_art():
+    window = turtle.Screen() # to open Screen
+    window.bgcolor("red") # background color
+    brad = turtle.Turtle() # create class 
+    brad.shap('turtle')
+    brad.speed(2)
+    brad.color('yellow')
+    draw_square(brad)
+
+    angie = turtle.Turtle()
+    angie.circle(100)
+    angie.shap('arrow')
+    angie.color('blue')
+
+    window.exitonclick() # to close the Screen
+draw_art()
+////////////////////////////
+
+from twilio.rest import Client
+# from twilio call the class rest
+
+////////////////////////////////
+
+from twilio.rest import Client
+
+account_sid = "ACd5740b638052b1d5720b0cdfd5cc38c4"
+auth_token = "c67f752c2ebc73ded3ac99202a876823"
+client = Client(account_sid,auth_token)
+
+message = client.messages.create(
+    body="From Muhtada Hello MyFreinds ! Ya Ya I do it",
+    to= "+9647711250505",
+    # to= "+9647702020808",
+    from_="+14243534368"
+)
+
+print message.sid
+
+///////////////////////////////
+
+c =open("path")
+c.read() # to read from inside the file
+c.close()
+////////////////////////////////
+
+import urllib
+
+def read_text():
+    i = open("/home/mut7/arabcoder/movies/movie.txt")
+    c = i.read()#content of file and read inside the path
+    print(c)
+    i.close()#close the file
+
+
+def check_profanity(text_to_check):
+    conn = urllib.urlopen("http://www.wdyl.com/profanity?q="+text_to_check)
+    # موقع ﻻيجاد الكلمات البذيئة
+    output = conn.read()
+    conn.close()
+    if "true" in output:
+        print("Profanity Alert!!")
+    elif "false" in output:
+        print ("This document has no curse words!")
+    else:
+        print("Could not scan the doecument properly.")
+read_text()
+ 
+ ///////////////////////////////
+
+ import webbrowser
+
+class Movie():
+    """this calss prvides a way to store movie related information"""
+    
+    def __init__(self, movie_title,movie_storyline,poster_image,
+        trailer_youtube):
+        # __init__ mean the name it is need a big space
+        self.title = movie_title
+        self.storyline = movie_storyline
+        self.poster_image_url = poster_image
+        self.trailer_youtube_url = trailer_youtube
+    
+    def show_trailer(self):
+        webbrowser.open(self.trailer_youtube_url)
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+import fresh_tomatoes
+import media
+
+toy_story = media.Movie("Toy Story","A story of a boy and his toys that came it a ture in life",
+                        "http://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg",
+                        "https://www.youtube.com./watch?=v=vwyZH85NQC4")
+# print(toy_story.storyline)
+
+avatar = media.Movie("Avatar",
+                    "A mariine on an alien palnet",
+                    "http://upload.wikimedia.org/wikipedia/id/b/b0/Avatar-Teaser-Poster.jpg",
+                    "https://youtube.com/watch?v=-9ceBgWV8io")
+# print (avatar.storyline)
+# avatar.show_trailer()
+school_of_rock = media.Movie("School of Rock",
+                            "storyline",
+                            "http://upload.wikimedia.orq/wikipedia/en/1/11/School_of_Rock_Poster.jpg",
+                            "https://www.youtube.com/watch?v=3PsUJFEBC74")
+
+ratatouille = media.Movie("Ratatouille","storyline",
+                         "http://upload.wikimedia.orq/wikipedia/en/5/50/RatatouillePoster.jpg",
+                         "https://www.youtube.com/watch?v=c3sBBRxDAqk")
+
+midnight_in_paris = media.Movie("Midnight in Prise","storyline",
+                            "http:upload.wikimedia.org/wikipedia/en/9/9f/Midniht_in_Paris_Poster.jpg",
+                            "https://www.youtube.com/watch?v=atLg2wQQzvU")
+
+hunger_games = media.Movie("Hunger games","storyline",
+                            "http:upload.wikimedia.org/wikipedia/en/4/42/HungerGamesPoster.jpg",
+                            "https://www.youtube.com/watch?v=PbA63a7H0bo")
+
+movies = [toy_story,avatar,school_of_rock,ratatouille,midnight_in_paris,hunger_games]
+# fresh_tomatoes.open_movies_page(movies)
+print media.Movie.__doc__ # to show commit of code
+print media.Movie.__name__ # to show the name 
+print media.Movie.__module__ 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+import webbrowser
+import os
+import re
+
+# Styles and scripting for the page
+main_page_head = '''
+<head>
+    <meta charset="utf-8">
+    <title>Fresh Tomatoes!</title>
+
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <style type="text/css" media="screen">
+        body {
+            padding-top: 80px;
+        }
+        #trailer .modal-dialog {
+            margin-top: 200px;
+            width: 640px;
+            height: 480px;
+        }
+        .hanging-close {
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            z-index: 9001;
+        }
+        #trailer-video {
+            width: 100%;
+            height: 100%;
+        }
+        .movie-tile {
+            margin-bottom: 20px;
+            padding-top: 20px;
+        }
+        .movie-tile:hover {
+            background-color: #EEE;
+            cursor: pointer;
+        }
+        .scale-media {
+            padding-bottom: 56.25%;
+            position: relative;
+        }
+        .scale-media iframe {
+            border: none;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            background-color: white;
+        }
+    </style>
+    <script type="text/javascript" charset="utf-8">
+        // Pause the video when the modal is closed
+        $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
+            // Remove the src so the player itself gets removed, as this is the only
+            // reliable way to ensure the video stops playing in IE
+            $("#trailer-video-container").empty();
+        });
+        // Start playing the video whenever the trailer modal is opened
+        $(document).on('click', '.movie-tile', function (event) {
+            var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
+            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+            $("#trailer-video-container").empty().append($("<iframe></iframe>", {
+              'id': 'trailer-video',
+              'type': 'text-html',
+              'src': sourceUrl,
+              'frameborder': 0
+            }));
+        });
+        // Animate in the movies when the page loads
+        $(document).ready(function () {
+          $('.movie-tile').hide().first().show("fast", function showNext() {
+            $(this).next("div").show("fast", showNext);
+          });
+        });
+    </script>
+</head>
+'''
+
+# The main page layout and title bar
+main_page_content = '''
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <!-- Trailer Video Modal -->
+    <div class="modal" id="trailer">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
+            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+          </a>
+          <div class="scale-media" id="trailer-video-container">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Main Page Content -->
+    <div class="container">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      {movie_tiles}
+    </div>
+  </body>
+</html>
+'''
+
+# A single movie entry html template
+movie_tile_content = '''
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
+    <img src="{poster_image_url}" width="220" height="342">
+    <h2>{movie_title}</h2>
+</div>
+'''
+
+def create_movie_tiles_content(movies):
+    # The HTML content for this section of the page
+    content = ''
+    for movie in movies:
+        # Extract the youtube ID from the url
+        youtube_id_match = re.search(r'(?<=v=)[^&#]+', movie.trailer_youtube_url)
+        youtube_id_match = youtube_id_match or re.search(r'(?<=be/)[^&#]+', movie.trailer_youtube_url)
+        trailer_youtube_id = youtube_id_match.group(0) if youtube_id_match else None
+
+        # Append the tile for the movie with its content filled in
+        content += movie_tile_content.format(
+            movie_title=movie.title,
+            poster_image_url=movie.poster_image_url,
+            trailer_youtube_id=trailer_youtube_id
+        )
+    return content
+
+def open_movies_page(movies):
+  # Create or overwrite the output file
+  output_file = open('fresh_tomatoes.html', 'w')
+
+  # Replace the placeholder for the movie tiles with the actual dynamically generated content
+  rendered_content = main_page_content.format(movie_tiles=create_movie_tiles_content(movies))
+
+  # Output the file
+  output_file.write(main_page_head + rendered_content)
+  output_file.close()
+
+  # open the output file in the browser
+  url = os.path.abspath(output_file.name)
+  webbrowser.open('file://' + url, new=2) # open in a new tab, if possible
+
+/////////////////////////////////////////
+
+class Parent():
+    def __init__(self, last_name, eye_color):
+        print("parnet costructor called")
+        self.last_name=last_name
+        self.eye_color=eye_color
+    
+    def show_info(self):
+        print("Last Name :"+self.last_name)
+        print("Eye Color :"+self.eye_color)
+
+class Chid(Parent):
+    def __init__(self, last_name, eye_color,number_of_toys):
+        print("child constructor called")
+        Parent.__init__(self,last_name,eye_color)
+        self.number_of_toys=number_of_toys
+
+    def show_info(self):
+        print("Last Name :"+self.last_name)
+        print("Eye Color :"+self.eye_color)
+        print("Number Of Toys :"+str(self.number_of_toys))
+
+pilly_cyrus = Parent("Cyrus","Blue")
+# pilly_cyrus.show_info()
+# print(pilly_cyrus.last_name)
+milly_cyrus = Chid("Cyrus","Blue",5)
+milly_cyrus.show_info()
+# print(milly_cyrus.last_name)
+# print(milly_cyrus.number_of_toys)
+
+//////////////////////////////////////////
+

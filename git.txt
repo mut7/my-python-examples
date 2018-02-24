@@ -1,0 +1,66 @@
+# sets up Git with your name
+git config --global user.name "<Your-Full-Name>"
+
+# sets up Git with your email
+git config --global user.email "<your-email-address>"
+
+# makes sure that Git output is colored
+git config --global color.ui auto
+
+# displays the original state in a conflict
+git config --global merge.conflictstyle diff3
+
+git config --list
+
+git init(name of repo)
+
+git clone path of url
+
+git log --oneline #  يظهر المتغيرات بدون تكرار
+
+git log --stat # يظهر التغييرات التي تمت كالحفظ والمسح واﻻضافة وعلى اي ملف
+
+git log -p #  يطهر التغييرات بشكل منفصل
+
+git log -p SHA
+
+git log show SHA
+
+git add . # add files from the working directory to the staging index
+
+git commit # take the files from the staging index and save them in the repo
+
+git diff # displays the difference between two versions of a files
+
+git status # لمعرفة اﻻضافات على المستودع
+
+git config --global -e # to open with vs code
+
+git commit -m "initial commit" # لعمل التعليق بدون الرجوع الى الفي اس كود
+
+# create file with name .gitignore save it in the same project directory and we can add the files with we want to ignore it inside it
+
+git tag -a v1.0 SHA # to add commit on commit
+
+git tag -d v1.0 SHA # to delete the tag
+
+git branch Name of branch # to make repo work with my repo same time
+
+git checkout Name of branch # to transfare between the branches
+
+git merge Name of branch # to mixed the changes with the master
+
+git checkout -b Name of branch master
+
+git log --oneline --decorate --graph --all
+
+git reset --hard HEAD^ # undo merge
+
+git reset --soft # go to the staging index
+
+git commit --amend # back to the last changes
+
+git revert SHA # back to the SHA which we change it
+
+
+
