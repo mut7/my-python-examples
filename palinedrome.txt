@@ -1,0 +1,13 @@
+def checkPalindrome(inputString):
+    if inputString[0:] == inputString[::-1]:
+        return True
+    else:
+        return False
+/////////////////////////////
+
+def checkPalindrome(inputString):
+    if inputString == ''.join(reversed(inputString)):
+        return True
+    else:
+        return False
+//////////////////////////////////
